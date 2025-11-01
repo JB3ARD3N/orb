@@ -1,0 +1,8 @@
+﻿version: '3.9'
+services:
+  orb-backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
