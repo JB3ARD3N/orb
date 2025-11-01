@@ -1,4 +1,5 @@
 ﻿"""Autonomous Agent Orchestrator"""
+import asyncio, json, uuid
 from datetime import datetime
 from typing import Dict, Any
 
@@ -20,3 +21,7 @@ class AgentOrchestrator:
             "total_agents": 4,
             "agents": {}
         }
+
+if __name__ == "__main__":
+    orchestrator = AgentOrchestrator()
+    print("Agent orchestrator initialized")
